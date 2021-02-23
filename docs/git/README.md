@@ -288,7 +288,7 @@ $ git config --global alias.unstage 'reset HEAD'
 
 #### 例 3 显示最后一次提交
 ```
-$ git config --global alias.last 'log -l'
+$ git config --global alias.last 'log -1'
 ```
 
 #### 例 4 分支历史并格式化样式
