@@ -11,7 +11,19 @@ module.exports = {
     ],
     sidebarDepth: 2,
     sidebar: [
-      '/git/'
+      {
+        title: '文档记录',
+        collapsable: false,
+        children: [
+          '/git/'
+        ]
+      },
+      {
+        title: '代码示例',
+        collapsable: false,
+        children: [
+        ]
+      }
     ]
   }
 }
