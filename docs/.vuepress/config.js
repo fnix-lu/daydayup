@@ -24,6 +24,7 @@ module.exports = {
         children: [
         ]
       }
-    ]
+    ],
+    lastUpdated: '最近更新'
   }
 }
