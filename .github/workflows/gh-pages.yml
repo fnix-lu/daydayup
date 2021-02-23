@@ -22,9 +22,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - env:
-          SUPER_SECRET: ${{ secrets.SuperSecret }}
-
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
@@ -39,6 +36,8 @@ jobs:
           yarn build
 
       - name: Deploy project
+        env:
+          SUPER_SECRET: ${{ secrets.SuperSecret }}
         run: |
           cd docs/.vuepress/dist
 
