@@ -36,7 +36,7 @@ jobs:
           yarn build
 
       - name: Deploy project
-        env:
+        with:
           SUPER_SECRET: ${{ secrets.SuperSecret }}
         run: |
           cd docs/.vuepress/dist
