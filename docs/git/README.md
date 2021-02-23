@@ -94,7 +94,10 @@ $ git remote add origin (可自定，一般不改) git@github.com:user-id/repona
 
 #### 将本地仓库内容推送到远程库（首次推送使用 `-u` 添加关联）
 ```
-$ git push [-u] origin (仓库) master (分支)
+$ git push [-u] <远程库> <本地分支>:<远程分支>
+
+$ git push -u origin master:dev
+$ git push -u origin master (<=> master:master)
 ```
 
 #### 无本地库，先创建远程库，再从远程库克隆内容
