@@ -69,6 +69,11 @@ $ git checkout -- .
 $ git reset HEAD file.txt
 ```
 
+#### 撤销新增的文件（未 `add`）
+```
+$ git clean [-d: 删除文件夹] [-f] [-n: 查看将被删除的文件]
+```
+
 #### 删除版本库文件（删除后需要 `commit` ）（先手动删除文件则可用 `add` 代替）
 ```
 $ git rm file.txt
@@ -94,7 +99,7 @@ $ git push [-u] origin (仓库) master (分支)
 
 #### 无本地库，先创建远程库，再从远程库克隆内容
 ```
-$ git clone git@github.com:user-id/repo-name.git
+$ git clone [-b <branch>: 克隆某个分支] git@github.com:user-id/repo-name.git [<本地文件夹命名>]
 ```
 
 ## 分支
