@@ -25,29 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # - name: Install yarn
-        # run: sudo npm i -g yarn
+      - name: Install and Build
+        run: yarn && yarn build
 
-      - name: Build and deploy
-        env:
-          SUPER_SECRET: ${{ secrets.ACCESS_TOKEN }}
-        run: sh deploy.sh
-
-      # - name: Build project
-      #   run: |
-      #     yarn
-      #     yarn build
-
-      # - name: Deploy project
-      #   with:
-      #     SUPER_SECRET: ${{ secrets.SuperSecret }}
-      #   run: |
-      #     cd docs/.vuepress/dist
-
-      #     git init
-      #     git add -A
-      #     git commit -m 'deploy'
-
-      #     git push -f https://github.com/fnix-lu/daydayup.git master:gh-pages
-
-      #     cd -
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vuepress/dist
