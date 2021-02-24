@@ -79,7 +79,7 @@ $ git clean [-d: 删除文件夹] [-f] [-n: 查看将被删除的文件]
 $ git rm file.txt
 ```
 
-## 远程仓库（Github）
+## 远程仓库（GitHub）
 
 #### 创建 SSH Key
 ```
@@ -87,7 +87,7 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 ```
 文件路径：用户主目录 > `.ssh` 目录 > `id_rsa` (私) + `id_rsa.pub` (公，用于平台 `SSH Keys` 绑定)
 
-#### 先有本地库时，在 `Github` 创建仓库后关联（多个远程库时 `origin` 可自定名称用于区分）
+#### 先有本地库时，在 `GitHub` 创建仓库后关联（多个远程库时 `origin` 可自定名称用于区分）
 ```
 $ git remote add origin (可自定，一般不改) git@github.com:user-id/reponame.git
 ```

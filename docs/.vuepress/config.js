@@ -7,7 +7,7 @@ module.exports = {
     logo: '/hero.jpg',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Github', link: 'https://github.com/fnix-lu/daydayup' }
+      { text: 'GitHub', link: 'https://github.com/fnix-lu/daydayup' }
     ],
     sidebarDepth: 2,
     sidebar: [
