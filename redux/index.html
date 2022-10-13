@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redux | fnix-lu 的天天向上</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="fnix-lu's notes and documents">
+    
+    <link rel="preload" href="/daydayup/assets/css/0.styles.f079d200.css" as="style"><link rel="preload" href="/daydayup/assets/js/app.56a8c8b9.js" as="script"><link rel="preload" href="/daydayup/assets/js/2.597ae21a.js" as="script"><link rel="preload" href="/daydayup/assets/js/13.65a9bc5f.js" as="script"><link rel="prefetch" href="/daydayup/assets/js/10.9c6f0ac2.js"><link rel="prefetch" href="/daydayup/assets/js/11.f1b4c601.js"><link rel="prefetch" href="/daydayup/assets/js/12.0bbc869d.js"><link rel="prefetch" href="/daydayup/assets/js/14.dffa566a.js"><link rel="prefetch" href="/daydayup/assets/js/15.f2f97d79.js"><link rel="prefetch" href="/daydayup/assets/js/16.cb73b558.js"><link rel="prefetch" href="/daydayup/assets/js/3.9a26f7a4.js"><link rel="prefetch" href="/daydayup/assets/js/4.75c9048d.js"><link rel="prefetch" href="/daydayup/assets/js/5.f636e753.js"><link rel="prefetch" href="/daydayup/assets/js/6.869622ce.js"><link rel="prefetch" href="/daydayup/assets/js/7.c1979a50.js"><link rel="prefetch" href="/daydayup/assets/js/8.93bb791a.js"><link rel="prefetch" href="/daydayup/assets/js/9.e409a5a9.js">
+    <link rel="stylesheet" href="/daydayup/assets/css/0.styles.f079d200.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/daydayup/" class="home-link router-link-active"><img src="/daydayup/hero.jpg" alt="fnix-lu 的天天向上" class="logo"> <span class="site-name can-hide">fnix-lu 的天天向上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>学习笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/git/" class="sidebar-link">Git</a></li><li><a href="/daydayup/cross-origin/" class="sidebar-link">跨域</a></li><li><a href="/daydayup/vue3/" class="sidebar-link">Vue3</a></li><li><a href="/daydayup/redux/" aria-current="page" class="active sidebar-link">Redux</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/redux/#三大原则" class="sidebar-link">三大原则</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#基础" class="sidebar-link">基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/redux/#action" class="sidebar-link">Action</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#action-创建函数" class="sidebar-link">Action 创建函数</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#reducer" class="sidebar-link">Reducer</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#reducer-拆分" class="sidebar-link">Reducer 拆分</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#store" class="sidebar-link">Store</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#发起-actions" class="sidebar-link">发起 Actions</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#数据流" class="sidebar-link">数据流</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#react-redux" class="sidebar-link">React-Redux</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/redux/#connect" class="sidebar-link">connect()</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#mapstatetoprops" class="sidebar-link">mapStateToProps()</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#mapdispatchtoprops" class="sidebar-link">mapDispatchToProps()</a></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#provider-组件" class="sidebar-link">&lt;Provider&gt; 组件</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/redux/#q-a" class="sidebar-link">Q &amp; A</a></li></ul></li><li><a href="/daydayup/typescript/" class="sidebar-link">TypeScript</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码示例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/css/" class="sidebar-link">CSS</a></li><li><a href="/daydayup/upload/" class="sidebar-link">AntD &amp; Element 自定义上传</a></li><li><a href="/daydayup/at-input/" class="sidebar-link">@ 功能输入框</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="redux"><a href="#redux" class="header-anchor">#</a> Redux</h1> <h2 id="三大原则"><a href="#三大原则" class="header-anchor">#</a> 三大原则</h2> <ul><li>单一数据源<br> <strong>整个应用的 state 被储存在一棵 object tree 中，并且这个 object tree 只存在于唯一一个 store 中。</strong></li> <li>State 只读<br> <strong>唯一改变 state 的方法就是触发 action，action 是一个用于描述已发生事件的普通对象。</strong></li> <li>使用纯函数执行修改<br> <strong>为了描述 action 如何改变 state tree ，你需要编写 reducers。</strong></li></ul> <h2 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h2> <h3 id="action"><a href="#action" class="header-anchor">#</a> Action</h3> <p>一个包含 <code>type</code> 字段的普通对象，除 <code>type</code> 外，可任意自定用于变更 <code>state</code> 的数据格式</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  type: TOGGLE_TODO,
+  index: 5
+}
+</code></pre></div><h3 id="action-创建函数"><a href="#action-创建函数" class="header-anchor">#</a> Action 创建函数</h3> <p>返回 Action 的普通函数</p> <div class="language- extra-class"><pre class="language-text"><code>import { ADD_TODO } from '../actionTypes' // 非必要
+
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    text
+  }
+}
+
+dispatch(addTodo(text))
+</code></pre></div><h3 id="reducer"><a href="#reducer" class="header-anchor">#</a> Reducer</h3> <p>连接 <code>State</code> 和 <code>Action</code> ，接收旧的 <code>state</code> 和 <code>action</code> ，返回新的 <code>state</code></p> <div class="language- extra-class"><pre class="language-text"><code>(previousState, action) =&gt; newState
+</code></pre></div><p>注意事项：<strong>只要传入参数相同，返回计算得到的下一个 state 就一定相同。没有特殊情况、没有副作用，没有 API 请求、没有变量修改，单纯执行计算。</strong></p> <p>示例</p> <div class="language- extra-class"><pre class="language-text"><code>const initialState = {
+  visibilityFilter: 'SHOW_ALL',
+  todos: []
+}
+
+function todoApp(state = initialState, action) {
+  switch (action.type) {
+    case 'SET_VISIBILITY_FILTER':
+      return Object.assign({}, state, {
+        visibilityFilter: action.filter
+      })
+    case 'ADD_TODO':
+      return Object.assign({}, state, {
+        todos: [
+          ...state.todos,
+          {
+            text: action.text,
+            completed: false
+          }
+        ]
+      })
+    case 'TOGGLE_TODO':
+      return Object.assign({}, state, {
+        todos: state.todos.map((todo, index) =&gt; {
+          if (index === action.index) {
+            return Object.assign({}, todo, {
+              completed: !todo.completed
+            })
+          }
+          return todo
+        })
+      })
+    default:
+      return state
+  }
+}
+</code></pre></div><ol><li>不要修改 <code>state</code></li> <li>在 <code>default</code> 情况下返回旧的 <code>state</code></li></ol> <h3 id="reducer-拆分"><a href="#reducer-拆分" class="header-anchor">#</a> Reducer 拆分</h3> <div class="language- extra-class"><pre class="language-text"><code>function todos(state = [], action) {
+  switch (action.type) {
+    case ADD_TODO:
+      return [
+        ...state,
+        {
+          text: action.text,
+          completed: false
+        }
+      ]
+    case TOGGLE_TODO:
+      return state.map((todo, index) =&gt; {
+        if (index === action.index) {
+          return Object.assign({}, todo, {
+            completed: !todo.completed
+          })
+        }
+        return todo
+      })
+    default:
+      return state
+  }
+}
+
+function visibilityFilter(state = SHOW_ALL, action) {
+  switch (action.type) {
+    case SET_VISIBILITY_FILTER:
+      return action.filter
+    default:
+      return state
+  }
+}
+
+// 主 reducer
+function todoApp(state = {}, action) {
+  return {
+    visibilityFilter: visibilityFilter(state.visibilityFilter, action),
+    todos: todos(state.todos, action)
+  }
+}
+
+// 主 reducer 简化
+import { combineReducers } from 'redux'
+
+const todoApp = combineReducers({
+  visibilityFilter,
+  todos
+})
+</code></pre></div><h3 id="store"><a href="#store" class="header-anchor">#</a> Store</h3> <ul><li>维持应用的 state</li> <li>提供 <code>getState()</code> 方法获取 state</li> <li>提供 <code>dispatch(action)</code> 方法更新 state</li> <li>通过 <code>subscribe(listener)</code> 注册监听器</li> <li>通过 <code>subscribe(listener)</code> 返回的函数注销监听器</li></ul> <div class="language- extra-class"><pre class="language-text"><code>import { createStore } from 'redux'
+import todoApp from './reducers'
+let store = createStore(todoApp)
+</code></pre></div><h3 id="发起-actions"><a href="#发起-actions" class="header-anchor">#</a> 发起 Actions</h3> <div class="language- extra-class"><pre class="language-text"><code>import {
+  addTodo,
+  toggleTodo,
+  setVisibilityFilter,
+  VisibilityFilters
+} from './actions'
+
+// 打印初始状态
+console.log(store.getState())
+
+// 每次 state 更新时，打印日志
+// 注意 subscribe() 返回一个函数用来注销监听器
+const unsubscribe = store.subscribe(() =&gt;
+  console.log(store.getState())
+)
+
+// 发起一系列 action
+store.dispatch(addTodo('Learn about actions'))
+store.dispatch(addTodo('Learn about reducers'))
+store.dispatch(addTodo('Learn about store'))
+store.dispatch(toggleTodo(0))
+store.dispatch(toggleTodo(1))
+store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED))
+
+// 停止监听 state 更新
+unsubscribe()
+</code></pre></div><h3 id="数据流"><a href="#数据流" class="header-anchor">#</a> 数据流</h3> <p>Redux 应用中数据的生命周期遵循 4 个步骤</p> <ol><li>调用 <code>store.dispatch(action)</code></li> <li>Redux store 调用传入的 reducer 函数</li> <li>根 reducer 应该把多个子 reducer 输出合并成一个单一的 state 树</li> <li>Redux store 保存了根 reducer 返回的完整 state 树</li></ol> <h2 id="react-redux"><a href="#react-redux" class="header-anchor">#</a> React-Redux</h2> <p>安装</p> <div class="language- extra-class"><pre class="language-text"><code>yarn add react-redux
+</code></pre></div><p>React-Redux 将组件划分为展示组件和容器组件。React-Redux 规定，所有的 UI 组件都由用户提供，容器组件则是由 React-Redux 自动生成。也就是说，用户负责视觉层，状态管理则是全部交给它。</p> <h3 id="connect"><a href="#connect" class="header-anchor">#</a> connect()</h3> <p>从展示组件生成容器组件</p> <div class="language- extra-class"><pre class="language-text"><code>import { connect } from 'react-redux'
+const VisibleTodoList = connect(
+  // 输入逻辑：外部的数据（即state对象）如何转换为 UI 组件的参数
+  mapStateToProps,
+  // 输出逻辑：用户发出的动作如何变为 Action 对象，从 UI 组件传出去
+  mapDispatchToProps
+)(TodoList)
+</code></pre></div><h3 id="mapstatetoprops"><a href="#mapstatetoprops" class="header-anchor">#</a> mapStateToProps()</h3> <p>函数，建立一个从（外部的）state 对象到（UI 组件的）props 对象的映射关系</p> <div class="language- extra-class"><pre class="language-text"><code>const mapStateToProps = (state) =&gt; {
+  return {
+    todos: getVisibleTodos(state.todos, state.visibilityFilter) // todos 为 UI 组件同名参数
+  }
+}
+
+const getVisibleTodos = (todos, filter) =&gt; {
+  switch (filter) {
+    case 'SHOW_ALL':
+      return todos
+    case 'SHOW_COMPLETED':
+      return todos.filter(t =&gt; t.completed)
+    case 'SHOW_ACTIVE':
+      return todos.filter(t =&gt; !t.completed)
+    default:
+      throw new Error('Unknown filter: ' + filter)
+  }
+}
+</code></pre></div><p>mapStateToProps 会订阅 Store，每当 state 更新的时候，就会自动执行，重新计算 UI 组件的参数，从而触发 UI 组件的重新渲染。</p> <p>mapStateToProps 的第一个参数总是 state 对象，还可以使用第二个参数，代表容器组件的 props 对象。</p> <div class="language- extra-class"><pre class="language-text"><code>// 容器组件的代码
+&lt;FilterLink filter=&quot;SHOW_ALL&quot;&gt;
+  All
+&lt;/FilterLink&gt;
+
+const mapStateToProps = (state, ownProps) =&gt; {
+  return {
+    active: ownProps.filter === state.visibilityFilter
+  }
+}
+
+</code></pre></div><p>使用 ownProps 作为参数后，如果容器组件的参数发生变化，也会引发 UI 组件重新渲染。</p> <h3 id="mapdispatchtoprops"><a href="#mapdispatchtoprops" class="header-anchor">#</a> mapDispatchToProps()</h3> <p>函数或对象，建立 UI 组件的参数到 store.dispatch 方法的映射</p> <ul><li>作为函数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>const mapDispatchToProps = (dispatch, ownProps) =&gt; {
+  return {
+    onClick: () =&gt; {
+      dispatch({
+        type: 'SET_VISIBILITY_FILTER',
+        filter: ownProps.filter
+      })
+    }
+  }
+}
+
+</code></pre></div><ul><li>作为对象</li></ul> <div class="language- extra-class"><pre class="language-text"><code>const mapDispatchToProps = {
+  // key: UI 组件的 prop
+  // value: 作为 Action Creator 的函数
+  // 返回的 Action 会由 Redux 自动发出
+  // 此示例等价于上方“作为函数”
+  onClick: (filter) =&gt; ({
+    type: 'SET_VISIBILITY_FILTER',
+    filter: filter
+  })
+}
+
+</code></pre></div><h3 id="provider-组件"><a href="#provider-组件" class="header-anchor">#</a> <code>&lt;Provider&gt;</code> 组件</h3> <div class="language- extra-class"><pre class="language-text"><code>import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import todoApp from './reducers'
+import App from './components/App'
+
+let store = createStore(todoApp);
+
+render(
+  &lt;Provider store={store}&gt;
+    &lt;App /&gt;
+  &lt;/Provider&gt;,
+  document.getElementById('root')
+)
+</code></pre></div><h2 id="q-a"><a href="#q-a" class="header-anchor">#</a> Q &amp; A</h2> <ol><li><strong>Q</strong>：UI 组件不能带 state 吗，与 redux 无关的自身 state 呢？<br> <strong>A</strong>：可以保留自身的 state</li> <li><strong>Q</strong>：UI 组件与 redux 无关的 props 如何传入，传给容器组件再 mapStateToProps 映射一遍吗？<br> <strong>A</strong>：无需映射或处理，在容器组件添加属性即可在 UI 组件中使用该 prop</li> <li><strong>Q</strong>：容器组件能否与 UI 组件处于一个文件，导出使用 connect(mapStateToProps, mapDispatchToProps)(Class) 转换的容器组件？此时引用该组件，传入的 props 是否可直接传入到内部的 Class 组件 (Q2)？<br> <strong>A</strong>：可以，一般也是这样实践，其余属性会直接传递给 Class 组件</li> <li><strong>Q</strong>：由上述 3 个问题推论，使用 react-redux 后，如果要使用 store 中的数据，是否要把组件所有的逻辑处理迁移到 mapStateToProps 和 mapDispatchToProps 中？<br> <strong>A</strong>：不需要，mapStateToProps 和 mapDispatchToProps 仅处理和 redux 有关的逻辑</li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">10/13/2022, 6:28:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/daydayup/vue3/" class="prev">
+        Vue3
+      </a></span> <span class="next"><a href="/daydayup/typescript/">
+        TypeScript
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/daydayup/assets/js/app.56a8c8b9.js" defer></script><script src="/daydayup/assets/js/2.597ae21a.js" defer></script><script src="/daydayup/assets/js/13.65a9bc5f.js" defer></script>
+  </body>
+</html>

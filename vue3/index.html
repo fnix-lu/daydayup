@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue3 | fnix-lu 的天天向上</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="fnix-lu's notes and documents">
+    
+    <link rel="preload" href="/daydayup/assets/css/0.styles.f079d200.css" as="style"><link rel="preload" href="/daydayup/assets/js/app.56a8c8b9.js" as="script"><link rel="preload" href="/daydayup/assets/js/2.597ae21a.js" as="script"><link rel="preload" href="/daydayup/assets/js/16.cb73b558.js" as="script"><link rel="prefetch" href="/daydayup/assets/js/10.9c6f0ac2.js"><link rel="prefetch" href="/daydayup/assets/js/11.f1b4c601.js"><link rel="prefetch" href="/daydayup/assets/js/12.0bbc869d.js"><link rel="prefetch" href="/daydayup/assets/js/13.65a9bc5f.js"><link rel="prefetch" href="/daydayup/assets/js/14.dffa566a.js"><link rel="prefetch" href="/daydayup/assets/js/15.f2f97d79.js"><link rel="prefetch" href="/daydayup/assets/js/3.9a26f7a4.js"><link rel="prefetch" href="/daydayup/assets/js/4.75c9048d.js"><link rel="prefetch" href="/daydayup/assets/js/5.f636e753.js"><link rel="prefetch" href="/daydayup/assets/js/6.869622ce.js"><link rel="prefetch" href="/daydayup/assets/js/7.c1979a50.js"><link rel="prefetch" href="/daydayup/assets/js/8.93bb791a.js"><link rel="prefetch" href="/daydayup/assets/js/9.e409a5a9.js">
+    <link rel="stylesheet" href="/daydayup/assets/css/0.styles.f079d200.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/daydayup/" class="home-link router-link-active"><img src="/daydayup/hero.jpg" alt="fnix-lu 的天天向上" class="logo"> <span class="site-name can-hide">fnix-lu 的天天向上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>学习笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/git/" class="sidebar-link">Git</a></li><li><a href="/daydayup/cross-origin/" class="sidebar-link">跨域</a></li><li><a href="/daydayup/vue3/" aria-current="page" class="active sidebar-link">Vue3</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#响应式" class="sidebar-link">响应式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#reactive" class="sidebar-link">reactive()</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#ref" class="sidebar-link">ref()</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#torefs" class="sidebar-link">toRefs()</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#readonly" class="sidebar-link">readonly()</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#composition-api-setup" class="sidebar-link">Composition API (setup)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#setup" class="sidebar-link">setup()</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#lifecycle-hooks" class="sidebar-link">Lifecycle Hooks</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#应用程序和组件实例" class="sidebar-link">应用程序和组件实例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#createapp" class="sidebar-link">createApp</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#provide-inject" class="sidebar-link">Provide / Inject</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#class-和-style-绑定" class="sidebar-link">Class 和 Style 绑定</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#条件渲染" class="sidebar-link">条件渲染</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#列表渲染" class="sidebar-link">列表渲染</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#v-for-中的-ref" class="sidebar-link">v-for 中的 ref</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#事件处理" class="sidebar-link">事件处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#绑定" class="sidebar-link">绑定</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#on-off-once" class="sidebar-link">$on, $off, $once</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#属性强制行为" class="sidebar-link">属性强制行为</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#自定义元素" class="sidebar-link">自定义元素</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#data-选项" class="sidebar-link">Data 选项</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#filters" class="sidebar-link">Filters</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#key-属性" class="sidebar-link">key 属性</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#keycode-修饰符" class="sidebar-link">KeyCode 修饰符</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#组件-props" class="sidebar-link">组件 Props</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#slots" class="sidebar-link">Slots</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#过渡效果的样式类变更" class="sidebar-link">过渡效果的样式类变更</a></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#v-model" class="sidebar-link">v-model</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/vue3/#v-model-支持自定义修饰符" class="sidebar-link">v-model 支持自定义修饰符</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/vue3/#v-bind-合并行为" class="sidebar-link">v-bind 合并行为</a></li></ul></li><li><a href="/daydayup/redux/" class="sidebar-link">Redux</a></li><li><a href="/daydayup/typescript/" class="sidebar-link">TypeScript</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码示例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/css/" class="sidebar-link">CSS</a></li><li><a href="/daydayup/upload/" class="sidebar-link">AntD &amp; Element 自定义上传</a></li><li><a href="/daydayup/at-input/" class="sidebar-link">@ 功能输入框</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue3"><a href="#vue3" class="header-anchor">#</a> Vue3</h1> <h2 id="响应式"><a href="#响应式" class="header-anchor">#</a> 响应式</h2> <h3 id="reactive"><a href="#reactive" class="header-anchor">#</a> <code>reactive()</code></h3> <p>从 JS 对象中创建响应式状态，组件的 <code>data()</code> 返回的状态也在内部调用了 <code>reactive()</code></p> <div class="language- extra-class"><pre class="language-text"><code>import { reactive } from 'vue'
+
+// reactive state
+const state = reactive({
+  count: 0
+})
+</code></pre></div><h3 id="ref"><a href="#ref" class="header-anchor">#</a> <code>ref()</code></h3> <p>将独立的值包装为响应式对象，该对象仅包含一个 <code>value</code> 属性</p> <div class="language- extra-class"><pre class="language-text"><code>import { ref } from 'vue'
+
+const count = ref(0)
+console.log(count.value) // 0
+
+count.value++
+console.log(count.value) // 1
+</code></pre></div><p>该对象通过 <code>setup()</code> 返回作为渲染上下文的属性或者在模板中使用时会自动解包，无需添加 <code>.value</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;span&gt;{{ count }}&lt;/span&gt;
+    &lt;button @click=&quot;count ++&quot;&gt;Increment count&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  import { ref } from 'vue'
+  export default {
+    setup() {
+      const count = ref(0)
+      return {
+        count
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre></div><p>在响应式对象中访问 <code>ref</code> 生成的对象时，也会自动解包</p> <div class="language- extra-class"><pre class="language-text"><code>const count = ref(0)
+const state = reactive({
+  count
+})
+
+console.log(state.count) // 0
+
+state.count = 1
+console.log(count.value) // 1
+</code></pre></div><p>如果将一个新的 ref 指定给一个已指向已有 ref 的属性，新的 ref 会替换旧的指向</p> <div class="language- extra-class"><pre class="language-text"><code>const otherCount = ref(2)
+
+state.count = otherCount
+console.log(state.count) // 2
+console.log(count.value) // 1
+</code></pre></div><p>ref 仅会在响应式的 <strong>Object</strong> 中自动解包，在 Array 或 Map 中需要使用 <code>.value</code> 访问属性值</p> <div class="language- extra-class"><pre class="language-text"><code>const books = reactive([ref('Vue 3 Guide')])
+// need .value here
+console.log(books[0].value)
+
+const map = reactive(new Map([['count', ref(0)]]))
+// need .value here
+console.log(map.get('count').value)
+</code></pre></div><h3 id="torefs"><a href="#torefs" class="header-anchor">#</a> <code>toRefs()</code></h3> <p>使用解构赋值时，赋值后的变量会丢失数据的响应式，使用 <code>toRefs()</code> 可以将响应式对象转换为 ref 集合，之后再解构，将保持被赋值变量的响应式</p> <div class="language- extra-class"><pre class="language-text"><code>import { reactive, toRefs } from 'vue'
+
+const book = reactive({
+  author: 'Vue Team',
+  year: '2020',
+  title: 'Vue 3 Guide',
+  description: 'You are reading this book right now ;)',
+  price: 'free'
+})
+
+let { author, title } = toRefs(book)
+
+title.value = 'Vue 3 Detailed Guide' // we need to use .value as title is a ref now
+console.log(book.title) // 'Vue 3 Detailed Guide'
+</code></pre></div><h3 id="readonly"><a href="#readonly" class="header-anchor">#</a> <code>readonly()</code></h3> <div class="language- extra-class"><pre class="language-text"><code>import { reactive, readonly } from 'vue'
+
+const original = reactive({ count: 0 })
+
+const copy = readonly(original)
+
+// mutating original will trigger watchers relying on the copy
+original.count++
+
+// mutating the copy will fail and result in a warning
+copy.count++ // warning: &quot;Set operation on key 'count' failed: target is readonly.&quot;
+</code></pre></div><h2 id="composition-api-setup"><a href="#composition-api-setup" class="header-anchor">#</a> Composition API (setup)</h2> <p>当一个组件中的业务越来越多，Vue 2 的组件代码组织会使得同一个业务相关的代码被分散在组件的不同位置，不便于理解和维护，Vue 3 的 Composition API 允许代码按业务进行拆分，在组件的 <code>setup</code> 选项中统一引入。</p> <p><code>setup</code> 在组件被创建之前执行，所以 <code>setup</code> 选项中无法访问 <code>this</code> ，这意味着也无法访问组件的本地状态 <code>data</code>，计算属性 <code>computed</code>，方法 <code>methods</code>。</p> <h3 id="setup"><a href="#setup" class="header-anchor">#</a> setup()</h3> <p>接收两个参数：<code>props</code>, <code>context</code></p> <div class="language- extra-class"><pre class="language-text"><code>setup (props, { attrs, slots, emit }) {
+}
+</code></pre></div><h4 id="props"><a href="#props" class="header-anchor">#</a> <code>props</code></h4> <p>传入组件的属性，并且是响应式的，如果使用解构语法，需要使用 <code>toRefs</code> 保持响应式</p> <div class="language- extra-class"><pre class="language-text"><code>import { toRefs } from 'vue'
+
+setup(props) {
+  const { title } = toRefs(props)
+  console.log(title.value)
+}
+</code></pre></div><h4 id="context"><a href="#context" class="header-anchor">#</a> <code>context</code></h4> <div class="language- extra-class"><pre class="language-text"><code>const { attrs, slots, emit } = context
+</code></pre></div><h3 id="lifecycle-hooks"><a href="#lifecycle-hooks" class="header-anchor">#</a> Lifecycle Hooks</h3> <p><code>setup()</code> 中的生命周期函数使用前缀 <code>on</code>，例如 <code>onMounted()</code>，生命周期函数接收函数类型的参数。</p> <p><code>beforeCreate</code> 和 <code>created</code> 在 <code>setup()</code> 中不需要明确定义，本应写在其中的代码直接写在 <code>setup()</code> 函数中。</p> <div class="language- extra-class"><pre class="language-text"><code>export default {
+  setup() {
+    // mounted
+    onMounted(() =&gt; {
+      console.log('Component is mounted!')
+    })
+  }
+}
+</code></pre></div><hr> <h2 id="应用程序和组件实例"><a href="#应用程序和组件实例" class="header-anchor">#</a> 应用程序和组件实例</h2> <h3 id="createapp"><a href="#createapp" class="header-anchor">#</a> createApp</h3> <p>使用 <code>createApp</code> 创建 Vue 应用示例</p> <div class="language- extra-class"><pre class="language-text"><code>const app = Vue.createApp({ /* options */ })
+
+app.component('SearchInput', SearchInputComponent)
+app.directive('focus', FocusDirective)
+app.use(LocalePlugin)
+
+// 或链式调用
+Vue.createApp({})
+  .component('SearchInput', SearchInputComponent)
+  .directive('focus', FocusDirective)
+  .use(LocalePlugin)
+</code></pre></div><h3 id="provide-inject"><a href="#provide-inject" class="header-anchor">#</a> Provide / Inject</h3> <div class="language- extra-class"><pre class="language-text"><code>// in the entry
+app.provide('guide', 'Vue 3 Guide')
+
+// in a child component
+export default {
+  inject: {
+    book: {
+      from: 'guide'
+    }
+  },
+  template: `&lt;div&gt;{{ book }}&lt;/div&gt;`
+}
+</code></pre></div><h2 id="class-和-style-绑定"><a href="#class-和-style-绑定" class="header-anchor">#</a> Class 和 Style 绑定</h2> <p>由于 Vue 3 组件支持多个根元素，引用组件时，在组件标签上添加的 class 和 style 需要在组件内部显式地指明添加的位置</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;my-component class=&quot;baz&quot;&gt;&lt;/my-component&gt;
+
+app.component('my-component', {
+  template: `
+    &lt;p :class=&quot;$attrs.class&quot;&gt;Hi!&lt;/p&gt;
+    &lt;span&gt;This is a child component&lt;/span&gt;
+  `
+})
+</code></pre></div><h2 id="条件渲染"><a href="#条件渲染" class="header-anchor">#</a> 条件渲染</h2> <p>Vue 3 中，<code>v-if</code> 与 <code>v-for</code> 一起使用时，<code>v-if</code> 优先级高，这与 Vue 2 相反，对于原本需要同时使用的情况，建议使用计算属性过滤出可见数据列表。</p> <h2 id="列表渲染"><a href="#列表渲染" class="header-anchor">#</a> 列表渲染</h2> <h3 id="v-for-中的-ref"><a href="#v-for-中的-ref" class="header-anchor">#</a> <code>v-for</code> 中的 <code>ref</code></h3> <p>Vue 2 中，在 <code>v-for</code> 的元素上使用 <code>ref</code> 属性，会生成一个元素引用的数组。</p> <p>Vue 3 中，该用法不再生成数组，可以给 <code>ref</code> 绑定一个函数，当前元素会作为该函数的参数传入，从而手动添加到一个数组（或对象，使用迭代的 <code>key</code> 作为键）中。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div v-for=&quot;item in list&quot; :ref=&quot;setItemRef&quot;&gt;&lt;/div&gt;
+
+export default {
+  data() {
+    return {
+      // 声明存放元素引用的数组
+      itemRefs: []
+    }
+  },
+  methods: {
+    // 给 ref 传入函数，手动将元素引用加入数组
+    setItemRef(el) {
+      this.itemRefs.push(el)
+    }
+  },
+  beforeUpdate() {
+    this.itemRefs = []
+  },
+  updated() {
+    console.log(this.itemRefs)
+  }
+}
+</code></pre></div><h2 id="事件处理"><a href="#事件处理" class="header-anchor">#</a> 事件处理</h2> <h3 id="绑定"><a href="#绑定" class="header-anchor">#</a> 绑定</h3> <p>事件可以绑定多个处理函数，使用逗号分隔</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;button @click=&quot;one($event), two($event)&quot;&gt;
+  Submit
+&lt;/button&gt;
+
+methods: {
+  one(event) {
+    //
+  },
+  two(event) {
+    //
+  }
+}
+</code></pre></div><h3 id="on-off-once"><a href="#on-off-once" class="header-anchor">#</a> <code>$on</code>, <code>$off</code>, <code>$once</code></h3> <p>这三个方法被移除，保留 <code>$emit</code> 用于子组件触发由父组件处理的事件</p> <p>event bus 官方推荐使用第三方库：mitt 或 tiny-emitter</p> <h2 id="属性强制行为"><a href="#属性强制行为" class="header-anchor">#</a> 属性强制行为</h2> <p>当元素的属性值为 <code>false</code> 时不再移除属性，而是设置为 <code>attr=&quot;false&quot;</code>，若要移除属性，请使用 <code>null</code> 或 <code>undefined</code></p> <h2 id="自定义元素"><a href="#自定义元素" class="header-anchor">#</a> 自定义元素</h2> <p><code>is</code> 属性只能用于 <code>&lt;component&gt;</code> 标签，其余标签中使用 <code>v-is</code></p> <h2 id="data-选项"><a href="#data-选项" class="header-anchor">#</a> Data 选项</h2> <p>当从 mixins 合并 data 时，将使用浅合并</p> <div class="language- extra-class"><pre class="language-text"><code>const Mixin = {
+  data() {
+    return {
+      user: {
+        name: 'Jack',
+        id: 1
+      }
+    }
+  }
+}
+
+const CompA = {
+  mixins: [Mixin],
+  data() {
+    return {
+      user: {
+        id: 2
+      }
+    }
+  }
+}
+</code></pre></div><p>Vue 2 中，<code>$data</code> 为</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  user: {
+    id: 2,
+    name: 'Jack' // Mixin 中的 name 属性也会并入
+  }
+}
+</code></pre></div><p>Vue 3 中，<code>$data</code> 为</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  user: {
+    id: 2
+    // 被 data 中的 user 覆盖，不存在 name 属性
+  }
+}
+</code></pre></div><h2 id="filters"><a href="#filters" class="header-anchor">#</a> Filters</h2> <p>Vue 3 中移除了 Filters ，官方建议在需要文本格式化的地方使用方法调用或计算属性。</p> <p>可通过在 <code>app</code> 实例上绑定全局函数，变相实现全局 Filters</p> <div class="language- extra-class"><pre class="language-text"><code>const app = createApp(App)
+
+app.config.globalProperties.$filters = {
+  currencyUSD(value) {
+    return '$' + value
+  }
+}
+
+&lt;template&gt;
+  &lt;h1&gt;Bank Account Balance&lt;/h1&gt;
+  &lt;p&gt;{{ $filters.currencyUSD(accountBalance) }}&lt;/p&gt;
+&lt;/template&gt;
+</code></pre></div><h2 id="key-属性"><a href="#key-属性" class="header-anchor">#</a> <code>key</code> 属性</h2> <p>在条件渲染 (<code>v-if</code>/<code>v-else</code>/<code>v-else-if</code>) 中，<code>key</code> 属性不再建议使用，Vue 3 会自动生成唯一的 <code>key</code> ，但如果手动提供了 <code>key</code> ，则每个条件分支都需要一个唯一的 <code>key</code>。</p> <p>在 <code>&lt;template v-for&gt;</code> 中使用 <code>key</code> 时，现在需要将 <code>key</code> 绑定于 <code>&lt;template&gt;</code> 标签上，而不再是原先实际渲染的子元素。</p> <h2 id="keycode-修饰符"><a href="#keycode-修饰符" class="header-anchor">#</a> KeyCode 修饰符</h2> <p>不再支持使用按键码作为键盘事件修饰符，也不再支持使用 <code>config.keyCodes</code> 配置按键码别名，Vue 3 中推荐使用 kebab-case 的按键名称作为修饰符。</p> <h2 id="组件-props"><a href="#组件-props" class="header-anchor">#</a> 组件 Props</h2> <p><code>props</code> 中，指定默认值的 <code>default</code> 工厂函数无法访问 <code>this</code> ，取而代之的是，组件接收到的原始属性会最为参数传给工厂函数</p> <h2 id="slots"><a href="#slots" class="header-anchor">#</a> Slots</h2> <p><code>this.$slots</code> 将 slots 暴露为函数</p> <p><code>this.$scopedSlots</code> 被移除</p> <div class="language- extra-class"><pre class="language-text"><code>// 2.x Syntax
+this.$scopedSlots.header
+
+// 3.x Syntax
+this.$slots.header()
+</code></pre></div><h2 id="过渡效果的样式类变更"><a href="#过渡效果的样式类变更" class="header-anchor">#</a> 过渡效果的样式类变更</h2> <ul><li><code>v-enter</code> =&gt; <code>v-enter-from</code></li> <li><code>v-leave</code> =&gt; <code>v-leave-from</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-leave-from,
+.v-enter-to {
+  opacity: 1;
+}
+</code></pre></div><p><code>&lt;transition&gt;</code> 组件的属性名变更</p> <ul><li><code>leave-class</code> =&gt; <code>leave-from-class</code></li> <li><code>enter-class</code> =&gt; <code>enter-from-class</code></li></ul> <h2 id="v-model"><a href="#v-model" class="header-anchor">#</a> v-model</h2> <p>使用于自定义组件时，默认监听的属性和事件变更：</p> <ul><li>属性：<code>value</code> =&gt; <code>modelValue</code></li> <li>事件：<code>input</code> =&gt; <code>update:modelValue</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;ChildComponent v-model=&quot;pageTitle&quot; /&gt;
+
+&lt;!-- 等价于 --&gt;
+
+&lt;ChildComponent
+  :modelValue=&quot;pageTitle&quot;
+  @update:modelValue=&quot;pageTitle = $event&quot;
+/&gt;
+</code></pre></div><p>上述改动在 Vue 2 中，等价于 <code>v-bind:modelValue.sync</code> ，但在 Vue 3，<code>v-bind</code> 的 <code>.sync</code> 修饰符和组件 <code>model</code> 选项均被移除，通过 <code>v-model:prop</code> 的形式统一在 <code>v-model</code> 的用法中。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;ChildComponent v-model:title=&quot;pageTitle&quot; /&gt;
+
+&lt;!-- 等价于 --&gt;
+
+&lt;ChildComponent :title=&quot;pageTitle&quot; @update:title=&quot;pageTitle = $event&quot; /&gt;
+</code></pre></div><p>因此，同一组件支持使用多个 <code>v-model</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;ChildComponent v-model:title=&quot;pageTitle&quot; v-model:content=&quot;pageContent&quot; /&gt;
+
+&lt;!-- 等价于 --&gt;
+
+&lt;ChildComponent
+  :title=&quot;pageTitle&quot;
+  @update:title=&quot;pageTitle = $event&quot;
+  :content=&quot;pageContent&quot;
+  @update:content=&quot;pageContent = $event&quot;
+/&gt;
+</code></pre></div><h3 id="v-model-支持自定义修饰符"><a href="#v-model-支持自定义修饰符" class="header-anchor">#</a> <code>v-model</code> 支持自定义修饰符</h3> <p>目前支持的内置修饰符：<code>.trim</code>, <code>.number</code>, <code>.lazy</code></p> <p><code>v-model</code> 上添加的自定义修饰符会通过组件的 <code>modelModifiers</code> (无参 <code>v-model</code>) 或 <code>prop + 'Modifiers'</code> (带参 <code>v-model:prop</code>) 属性传入，</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;my-component v-model.capitalize=&quot;bar&quot;&gt;&lt;/my-component&gt;
+
+app.component('my-component', {
+  props: {
+    modelValue: String,
+    modelModifiers: {
+      default: () =&gt; ({})
+    }
+  },
+  template: `
+    &lt;input type=&quot;text&quot;
+      :value=&quot;modelValue&quot;
+      @input=&quot;$emit('update:modelValue', $event.target.value)&quot;&gt;
+  `,
+  created() {
+    console.log(this.modelModifiers) // { capitalize: true } 组件调用时使用了的修饰符
+  }
+})
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;my-component v-model:foo.capitalize=&quot;bar&quot;&gt;&lt;/my-component&gt;
+
+app.component('my-component', {
+  props: ['foo', 'fooModifiers'],
+  template: `
+    &lt;input type=&quot;text&quot;
+      :value=&quot;foo&quot;
+      @input=&quot;$emit('update:foo', $event.target.value)&quot;&gt;
+  `,
+  created() {
+    console.log(this.fooModifiers) // { capitalize: true }
+  }
+})
+</code></pre></div><p>根据某属性的修饰符 map 中是否存在某个修饰符，做相应的数据处理</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;my-component v-model:foo.capitalize=&quot;bar&quot;&gt;&lt;/my-component&gt; // fooModifiers =&gt; { capitalize: true }
+
+// data handler
+...
+if (this.fooModifiers.capitalize) {
+  value = value.charAt(0).toUpperCase() + value.slice(1)
+}
+...
+this.$emit('update:foo', value)
+</code></pre></div><h2 id="v-bind-合并行为"><a href="#v-bind-合并行为" class="header-anchor">#</a> v-bind 合并行为</h2> <p><code>v-bind</code> 绑定顺序会影响渲染结果</p> <p>Vue 2 中，单独绑定的属性会覆盖 <code>v-bind=&quot;object&quot;</code> 中的同名属性</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- template --&gt;
+&lt;div id=&quot;red&quot; v-bind=&quot;{ id: 'blue' }&quot;&gt;&lt;/div&gt;
+&lt;!-- result --&gt;
+&lt;div id=&quot;red&quot;&gt;&lt;/div&gt;
+</code></pre></div><p>Vue 3 中，按绑定顺序合并，后绑定的覆盖先绑定的</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- template --&gt;
+&lt;div id=&quot;red&quot; v-bind=&quot;{ id: 'blue' }&quot;&gt;&lt;/div&gt;
+&lt;!-- result --&gt;
+&lt;div id=&quot;blue&quot;&gt;&lt;/div&gt;
+
+&lt;!-- template --&gt;
+&lt;div v-bind=&quot;{ id: 'blue' }&quot; id=&quot;red&quot;&gt;&lt;/div&gt;
+&lt;!-- result --&gt;
+&lt;div id=&quot;red&quot;&gt;&lt;/div&gt;
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">10/13/2022, 6:28:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/daydayup/cross-origin/" class="prev">
+        跨域
+      </a></span> <span class="next"><a href="/daydayup/redux/">
+        Redux
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/daydayup/assets/js/app.56a8c8b9.js" defer></script><script src="/daydayup/assets/js/2.597ae21a.js" defer></script><script src="/daydayup/assets/js/16.cb73b558.js" defer></script>
+  </body>
+</html>

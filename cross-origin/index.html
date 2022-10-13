@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>跨域 | fnix-lu 的天天向上</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="fnix-lu's notes and documents">
+    
+    <link rel="preload" href="/daydayup/assets/css/0.styles.f079d200.css" as="style"><link rel="preload" href="/daydayup/assets/js/app.56a8c8b9.js" as="script"><link rel="preload" href="/daydayup/assets/js/2.597ae21a.js" as="script"><link rel="preload" href="/daydayup/assets/js/10.9c6f0ac2.js" as="script"><link rel="prefetch" href="/daydayup/assets/js/11.f1b4c601.js"><link rel="prefetch" href="/daydayup/assets/js/12.0bbc869d.js"><link rel="prefetch" href="/daydayup/assets/js/13.65a9bc5f.js"><link rel="prefetch" href="/daydayup/assets/js/14.dffa566a.js"><link rel="prefetch" href="/daydayup/assets/js/15.f2f97d79.js"><link rel="prefetch" href="/daydayup/assets/js/16.cb73b558.js"><link rel="prefetch" href="/daydayup/assets/js/3.9a26f7a4.js"><link rel="prefetch" href="/daydayup/assets/js/4.75c9048d.js"><link rel="prefetch" href="/daydayup/assets/js/5.f636e753.js"><link rel="prefetch" href="/daydayup/assets/js/6.869622ce.js"><link rel="prefetch" href="/daydayup/assets/js/7.c1979a50.js"><link rel="prefetch" href="/daydayup/assets/js/8.93bb791a.js"><link rel="prefetch" href="/daydayup/assets/js/9.e409a5a9.js">
+    <link rel="stylesheet" href="/daydayup/assets/css/0.styles.f079d200.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/daydayup/" class="home-link router-link-active"><img src="/daydayup/hero.jpg" alt="fnix-lu 的天天向上" class="logo"> <span class="site-name can-hide">fnix-lu 的天天向上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>学习笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/git/" class="sidebar-link">Git</a></li><li><a href="/daydayup/cross-origin/" aria-current="page" class="active sidebar-link">跨域</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/cross-origin/#测试使用的后端-nodejs-接口" class="sidebar-link">测试使用的后端（nodejs）接口</a></li><li class="sidebar-sub-header"><a href="/daydayup/cross-origin/#jsonp-仅支持-get-请求" class="sidebar-link">JSONP（仅支持 GET 请求）</a></li><li class="sidebar-sub-header"><a href="/daydayup/cross-origin/#cors" class="sidebar-link">CORS</a></li><li class="sidebar-sub-header"><a href="/daydayup/cross-origin/#nginx-反向代理" class="sidebar-link">nginx 反向代理</a></li><li class="sidebar-sub-header"><a href="/daydayup/cross-origin/#nodejs-中间件" class="sidebar-link">nodejs 中间件</a></li></ul></li><li><a href="/daydayup/vue3/" class="sidebar-link">Vue3</a></li><li><a href="/daydayup/redux/" class="sidebar-link">Redux</a></li><li><a href="/daydayup/typescript/" class="sidebar-link">TypeScript</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码示例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/css/" class="sidebar-link">CSS</a></li><li><a href="/daydayup/upload/" class="sidebar-link">AntD &amp; Element 自定义上传</a></li><li><a href="/daydayup/at-input/" class="sidebar-link">@ 功能输入框</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="跨域"><a href="#跨域" class="header-anchor">#</a> 跨域</h1> <h2 id="测试使用的后端-nodejs-接口"><a href="#测试使用的后端-nodejs-接口" class="header-anchor">#</a> 测试使用的后端（nodejs）接口</h2> <p>server.js</p> <div class="language- extra-class"><pre class="language-text"><code>var express = require('express');
+var bodyParser = require('body-parser');
+var multer = require('multer');
+
+var app = express();
+
+// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+var server = app.listen(9091, function () {
+    console.log('Server is running at http://192.168.1.127:9091');
+});
+
+var userHandler = new (require('./userHandler'));
+
+app.get('/', function (request, response) {
+    response.send('Welcome to this server.');
+});
+
+app.get('/users', function (request, response) {
+    var cb = request.query.cb;
+    var result = userHandler.getAllUsers();
+    response.send(cb + '(' + JSON.stringify(result) + ')'); // jsonp接口返回形式
+});
+
+app.get('/getUserById', function (request, response) {
+    var id = request.query.id;
+    var result = userHandler.getUserById(id);
+    response.send(JSON.stringify(result));
+});
+
+app.post('/getUserById', function (request, response) {
+    var id = request.body.id;
+    var result = userHandler.getUserById(id);
+    response.send(JSON.stringify(result));
+});
+</code></pre></div><p>userHandler.js</p> <div class="language- extra-class"><pre class="language-text"><code>var data = require('./data');
+
+function UserHandler () {
+    this.getAllUsers = function () {
+        var result = {
+            code: -1,
+            users: null
+        };
+
+        if (data.users) {
+            result.code = 200;
+            result.users = data.users;
+        }
+
+        return result;
+    }
+    this.getUserById = function (id) {
+        var result = {
+            code: -1,
+            user: null
+        };
+
+        for (var i = 0; i &lt; data.users.length; i++) {
+            if (data.users[i].id == id) {
+                result.code = 200;
+                result.user = data.users[i];
+                break;
+            }
+        }
+
+        return result;
+    }
+}
+
+module.exports = UserHandler;
+</code></pre></div><p>data.js</p> <div class="language- extra-class"><pre class="language-text"><code>exports.users = [
+    {
+        id: 1,
+        name: 'Alina',
+        sex: 'female',
+        age: 18,
+        height: 162
+    }, {
+        id: 2,
+        name: 'Bruce',
+        sex: 'male',
+        age: 23,
+        height: 178
+    }, {
+        id: 3,
+        name: 'Cindy',
+        sex: 'female',
+        age: 19,
+        height: 158
+    }, {
+        id: 4,
+        name: 'David',
+        sex: 'male',
+        age: 22,
+        height: 175
+    }, {
+        id: 5,
+        name: 'Edward',
+        sex: 'male',
+        age: 23,
+        height: 178
+    }
+];
+</code></pre></div><h2 id="jsonp-仅支持-get-请求"><a href="#jsonp-仅支持-get-请求" class="header-anchor">#</a> JSONP（仅支持 GET 请求）</h2> <p>前端：使用 js 创建 script 标签，src 属性值为 api 地址</p> <p>后端：接口返回用回调函数包裹数据的 js -&gt; callback(json)</p> <p>js</p> <div class="language- extra-class"><pre class="language-text"><code>jsonp('http://192.168.1.127:9090/test/test.json', 'showData', { userName: 'John' });
+
+function jsonp (url, callback, data) {
+    var s = document.createElement('script');
+
+    s.src = url + '?cb=' + callback;
+    if (data &amp;&amp; typeof data === 'object') {
+        for (var key in data) {
+            s.src += '&amp;' + key + '=' + data[key];
+        }
+    }
+
+    document.getElementsByTagName('head')[0].appendChild(s);
+}
+
+function showData (data) {
+    console.log(data);
+}
+</code></pre></div><p>jquery</p> <div class="language- extra-class"><pre class="language-text"><code>$.ajax({
+    url: 'http://192.168.1.127:9090/test/test.json', // http://192.168.1.127:9090/test/test.json?cb=showData&amp;userName=John
+    type: 'GET',
+    data: {
+        userName: 'John'
+    },
+    dataType: 'jsonp',
+    jsonp: 'cb', // 记录回调函数名的变量名 默认为callback
+    jsonpCallback: 'showData' // 回调函数名 使用success回调则可不写 jquery会随机生成函数名对应success回调
+});
+
+function showData (data) {
+    console.log(data);
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>$.getJSON('http://192.168.1.127:9090/test/test.json?cb=?', { userName: 'John' }, function (data) {
+    console.log(data);
+});
+</code></pre></div><h2 id="cors"><a href="#cors" class="header-anchor">#</a> CORS</h2> <p>请求头与响应头</p> <p>后端：服务端设置 Access-Control-Allow-Origin: * | domain，带 cookie：Access-Control-Allow-Credentials: true</p> <p>前端带 cookie：xhr.withCredentials = true 读取的为请求接口所在域的 cookie</p> <ul><li>如果需要当前页 cookie 的写入：1.nginx 反向代理设置 proxy_cookie_domain，2.nodejs 中间件代理中设置 cookieDomainRewrite 参数</li></ul> <h2 id="nginx-反向代理"><a href="#nginx-反向代理" class="header-anchor">#</a> nginx 反向代理</h2> <p>原理：同源策略是浏览器的安全策略，不是 HTTP 协议的一部分。服务器端调用 HTTP 接口只是使用 HTTP 协议，不会执行 JS 脚本，不需要同源策略，也就不存在跨越问题</p> <p>通过 nginx 配置一个代理服务器 proxy，反向代理访问 server 接口，并且可以顺便修改 cookie 中 domain 信息，方便当前域 cookie 写入，实现跨域登录</p> <div class="language- extra-class"><pre class="language-text"><code>server {
+    listen       9093;
+    server_name  http://192.168.1.127;
+
+    # /api/ 匹配 /api/xxx    对应 ^/api/(.*)$
+    # /api  匹配 /apixxx/xxx 对应 ^/api[^/]*/(.*)$
+    location ^~ /api/ {
+        proxy_pass http://192.168.1.127:9091;
+        # proxy_cookie_domain www.domain2.com www.domain1.com;
+        rewrite ^/api/(.*)$ /$1 break;
+
+        add_header Access-Control-Allow-Origin http://192.168.1.127:9090;
+        add_header Access_Control-Allow-Credentials true;
+    }
+}
+</code></pre></div><h2 id="nodejs-中间件"><a href="#nodejs-中间件" class="header-anchor">#</a> nodejs 中间件</h2> <div class="language- extra-class"><pre class="language-text"><code>var express = require('express');
+var proxy = require('http-proxy-middleware');
+var app = express();
+
+app.use('/api/', proxy({
+    target: 'http://192.168.1.127:9091',
+    pathRewrite: {
+        '/api/' : '/'
+    },
+    changeOrigin: true,
+    onProxyRes: function (proxyRes, request, response) {
+        response.header('Access-Control-Allow-Origin', 'http://192.168.1.127:9090');
+        response.header('Access-Control-Allow-Credentials', 'true');
+    },
+
+    cookieDomainRewrite: 'www.domain1.com'; // 可以为false，表示不修改
+}));
+
+var server = app.listen(9092, function (request, response) {
+    console.log('Proxy server is running at http://192.168.1.127:9092');
+});
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">10/13/2022, 6:28:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/daydayup/git/" class="prev">
+        Git
+      </a></span> <span class="next"><a href="/daydayup/vue3/">
+        Vue3
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/daydayup/assets/js/app.56a8c8b9.js" defer></script><script src="/daydayup/assets/js/2.597ae21a.js" defer></script><script src="/daydayup/assets/js/10.9c6f0ac2.js" defer></script>
+  </body>
+</html>

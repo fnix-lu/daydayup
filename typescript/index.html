@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TypeScript | fnix-lu 的天天向上</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="fnix-lu's notes and documents">
+    
+    <link rel="preload" href="/daydayup/assets/css/0.styles.f079d200.css" as="style"><link rel="preload" href="/daydayup/assets/js/app.56a8c8b9.js" as="script"><link rel="preload" href="/daydayup/assets/js/2.597ae21a.js" as="script"><link rel="preload" href="/daydayup/assets/js/14.dffa566a.js" as="script"><link rel="prefetch" href="/daydayup/assets/js/10.9c6f0ac2.js"><link rel="prefetch" href="/daydayup/assets/js/11.f1b4c601.js"><link rel="prefetch" href="/daydayup/assets/js/12.0bbc869d.js"><link rel="prefetch" href="/daydayup/assets/js/13.65a9bc5f.js"><link rel="prefetch" href="/daydayup/assets/js/15.f2f97d79.js"><link rel="prefetch" href="/daydayup/assets/js/16.cb73b558.js"><link rel="prefetch" href="/daydayup/assets/js/3.9a26f7a4.js"><link rel="prefetch" href="/daydayup/assets/js/4.75c9048d.js"><link rel="prefetch" href="/daydayup/assets/js/5.f636e753.js"><link rel="prefetch" href="/daydayup/assets/js/6.869622ce.js"><link rel="prefetch" href="/daydayup/assets/js/7.c1979a50.js"><link rel="prefetch" href="/daydayup/assets/js/8.93bb791a.js"><link rel="prefetch" href="/daydayup/assets/js/9.e409a5a9.js">
+    <link rel="stylesheet" href="/daydayup/assets/css/0.styles.f079d200.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/daydayup/" class="home-link router-link-active"><img src="/daydayup/hero.jpg" alt="fnix-lu 的天天向上" class="logo"> <span class="site-name can-hide">fnix-lu 的天天向上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/daydayup/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/fnix-lu/daydayup" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>学习笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/git/" class="sidebar-link">Git</a></li><li><a href="/daydayup/cross-origin/" class="sidebar-link">跨域</a></li><li><a href="/daydayup/vue3/" class="sidebar-link">Vue3</a></li><li><a href="/daydayup/redux/" class="sidebar-link">Redux</a></li><li><a href="/daydayup/typescript/" aria-current="page" class="active sidebar-link">TypeScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#编译" class="sidebar-link">编译</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#原始数据类型" class="sidebar-link">原始数据类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#布尔值" class="sidebar-link">布尔值</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#数值" class="sidebar-link">数值</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#字符串" class="sidebar-link">字符串</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#空值" class="sidebar-link">空值</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#null-和-undefined" class="sidebar-link">Null 和 Undefined</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#任意值类型" class="sidebar-link">任意值类型</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#类型推论" class="sidebar-link">类型推论</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#联合类型-多种类型" class="sidebar-link">联合类型（多种类型）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#访问联合类型的属性和方法" class="sidebar-link">访问联合类型的属性和方法</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#对象的类型-interface" class="sidebar-link">对象的类型 —— interface</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#可选属性" class="sidebar-link">可选属性</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#任意属性" class="sidebar-link">任意属性</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#只读属性" class="sidebar-link">只读属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#数组类型" class="sidebar-link">数组类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#类型-方括号-表示法" class="sidebar-link">类型 + 方括号 表示法</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#数组泛型" class="sidebar-link">数组泛型</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#用接口表示数组" class="sidebar-link">用接口表示数组</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#类数组" class="sidebar-link">类数组</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#数组中的-any" class="sidebar-link">数组中的 any</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#函数类型" class="sidebar-link">函数类型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#函数声明" class="sidebar-link">函数声明</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#函数表达式" class="sidebar-link">函数表达式</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#用接口定义函数的形状" class="sidebar-link">用接口定义函数的形状</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#可选参数" class="sidebar-link">可选参数</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#参数默认值" class="sidebar-link">参数默认值</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#剩余参数" class="sidebar-link">剩余参数</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#重载" class="sidebar-link">重载</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#类型断言" class="sidebar-link">类型断言</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#语法" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#将一个联合类型断言为其中一个类型" class="sidebar-link">将一个联合类型断言为其中一个类型</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#将一个父类断言为更加具体的子类" class="sidebar-link">将一个父类断言为更加具体的子类</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#将任何一个类型断言为-any" class="sidebar-link">将任何一个类型断言为 any</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#将-any-断言为一个具体的类型" class="sidebar-link">将 any 断言为一个具体的类型</a></li></ul></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#内置对象" class="sidebar-link">内置对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/daydayup/typescript/#ecmascript-的内置对象" class="sidebar-link">ECMAScript 的内置对象</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#dom-和-bom-的内置对象" class="sidebar-link">DOM 和 BOM 的内置对象</a></li><li class="sidebar-sub-header"><a href="/daydayup/typescript/#用-typescript-写-node-js" class="sidebar-link">用 TypeScript 写 Node.js</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码示例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/daydayup/css/" class="sidebar-link">CSS</a></li><li><a href="/daydayup/upload/" class="sidebar-link">AntD &amp; Element 自定义上传</a></li><li><a href="/daydayup/at-input/" class="sidebar-link">@ 功能输入框</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="typescript"><a href="#typescript" class="header-anchor">#</a> TypeScript</h1> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <div class="language- extra-class"><pre class="language-text"><code>npm install -g typescript
+</code></pre></div><h2 id="编译"><a href="#编译" class="header-anchor">#</a> 编译</h2> <div class="language- extra-class"><pre class="language-text"><code>tsc hello.ts
+</code></pre></div><p>TypeScript 中，使用 <code>:</code> 指定变量的类型</p> <h2 id="原始数据类型"><a href="#原始数据类型" class="header-anchor">#</a> 原始数据类型</h2> <h3 id="布尔值"><a href="#布尔值" class="header-anchor">#</a> 布尔值</h3> <div class="language- extra-class"><pre class="language-text"><code>let isDone: boolean = false;
+</code></pre></div><h3 id="数值"><a href="#数值" class="header-anchor">#</a> 数值</h3> <div class="language- extra-class"><pre class="language-text"><code>let decLiteral: number = 6;
+</code></pre></div><h3 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h3> <div class="language- extra-class"><pre class="language-text"><code>let myName: string = 'Tom';
+</code></pre></div><h3 id="空值"><a href="#空值" class="header-anchor">#</a> 空值</h3> <p>使用 <code>void</code> 表示没有返回值的函数</p> <div class="language- extra-class"><pre class="language-text"><code>function alertName(): void {
+    alert('My name is Tom');
+}
+</code></pre></div><h3 id="null-和-undefined"><a href="#null-和-undefined" class="header-anchor">#</a> Null 和 Undefined</h3> <div class="language- extra-class"><pre class="language-text"><code>let n: null = null;
+let u: undefined = undefined;
+</code></pre></div><p><code>null</code> 和 <code>undefined</code> 是所有类型的子类型</p> <div class="language- extra-class"><pre class="language-text"><code>// 这样不会报错
+let num: number = undefined;
+
+// 这样也不会报错
+let u: undefined;
+let num: number = u;
+</code></pre></div><p><code>void</code> 类型的变量不能赋值给 <code>number</code> 类型的变量</p> <div class="language- extra-class"><pre class="language-text"><code>let u: void;
+let num: number = u;
+
+// Type 'void' is not assignable to type 'number'.
+</code></pre></div><h2 id="任意值类型"><a href="#任意值类型" class="header-anchor">#</a> 任意值类型</h2> <p>任意值 <code>any</code> 用来表示允许赋值为任意类型</p> <p>普通类型的变量在赋值时改变数据类型会报错</p> <div class="language- extra-class"><pre class="language-text"><code>let myFavoriteNumber: string = 'seven';
+myFavoriteNumber = 7;
+
+// index.ts(2,1): error TS2322: Type 'number' is not assignable to type 'string'.
+</code></pre></div><p><code>any</code> 类型可以在赋值时改变数据类型</p> <div class="language- extra-class"><pre class="language-text"><code>let myFavoriteNumber: any = 'seven';
+myFavoriteNumber = 7;
+</code></pre></div><p><strong>声明一个变量为任意值之后，对它的任何操作，返回的内容的类型都是任意值</strong></p> <p><strong>变量如果在声明的时候，未指定其类型，那么它会被识别为任意值类型</strong></p> <div class="language- extra-class"><pre class="language-text"><code>let something;
+</code></pre></div><p>等价于</p> <div class="language- extra-class"><pre class="language-text"><code>let something: any;
+</code></pre></div><h2 id="类型推论"><a href="#类型推论" class="header-anchor">#</a> 类型推论</h2> <p>如果变量定义的时候有赋值，会根据该值做类型推论；而如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 <code>any</code> 类型而完全不被类型检查</p> <div class="language- extra-class"><pre class="language-text"><code>let myFavoriteNumber = 'seven';
+</code></pre></div><p>等价于</p> <div class="language- extra-class"><pre class="language-text"><code>let myFavoriteNumber: string = 'seven';
+</code></pre></div><h2 id="联合类型-多种类型"><a href="#联合类型-多种类型" class="header-anchor">#</a> 联合类型（多种类型）</h2> <div class="language- extra-class"><pre class="language-text"><code>let myFavoriteNumber: string | number;
+</code></pre></div><h3 id="访问联合类型的属性和方法"><a href="#访问联合类型的属性和方法" class="header-anchor">#</a> 访问联合类型的属性和方法</h3> <p>当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们<strong>只能访问此联合类型的所有类型里共有的属性或方法</strong></p> <p>以下 <code>length</code> 不是 <code>string</code> 和 <code>number</code> 的共有属性，所以会报错</p> <div class="language- extra-class"><pre class="language-text"><code>function getLength(something: string | number): number {
+    return something.length;
+}
+
+// index.ts(2,22): error TS2339: Property 'length' does not exist on type 'string | number'.
+// Property 'length' does not exist on type 'number'.
+</code></pre></div><h2 id="对象的类型-interface"><a href="#对象的类型-interface" class="header-anchor">#</a> 对象的类型 —— <code>interface</code></h2> <div class="language- extra-class"><pre class="language-text"><code>interface Person {
+    name: string;
+    age: number;
+}
+
+let tom: Person = {
+    name: 'Tom',
+    age: 25
+};
+</code></pre></div><p><strong>赋值的时候，变量的形状必须和接口的形状保持一致，不能少属性或多属性。若要允许不完全匹配，使用可选属性</strong></p> <h3 id="可选属性"><a href="#可选属性" class="header-anchor">#</a> 可选属性</h3> <div class="language- extra-class"><pre class="language-text"><code>interface Person {
+    name: string;
+    age?: number;
+}
+
+let tom: Person = {
+    name: 'Tom'
+};
+</code></pre></div><p><strong>可选属性仍然不允许添加未定义的属性。若希望添加未定义的属性，使用任意属性</strong></p> <h3 id="任意属性"><a href="#任意属性" class="header-anchor">#</a> 任意属性</h3> <div class="language- extra-class"><pre class="language-text"><code>interface Person {
+    name: string;
+    [propName: string]: any;
+}
+
+let tom: Person = {
+    name: 'Tom',
+    gender: 'male'
+};
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>interface Person {
+    name: string;
+    age?: number;
+    [propName: string]: string | number;
+}
+
+let tom: Person = {
+    name: 'Tom',
+    age: 25,
+    gender: 'male'
+};
+</code></pre></div><p><strong>一旦定义了任意属性，那么确定属性和可选属性的类型都必须是它的类型的子集</strong></p> <h3 id="只读属性"><a href="#只读属性" class="header-anchor">#</a> 只读属性</h3> <p>使用 <code>readonly</code> 限定对象的某些属性只能在创建的时候赋值</p> <div class="language- extra-class"><pre class="language-text"><code>interface Person {
+    readonly id: number;
+    name: string;
+    age?: number;
+    [propName: string]: any;
+}
+
+let tom: Person = {
+    id: 89757,
+    name: 'Tom',
+    gender: 'male'
+};
+
+// 此时赋值会报错
+tom.id = 9527;
+</code></pre></div><p><strong>只读的约束存在于第一次给对象赋值的时候，而不是第一次给只读属性赋值的时候：对象赋值时其只读属性需要被赋值，对象赋值后不能再给只读属性赋值</strong></p> <h2 id="数组类型"><a href="#数组类型" class="header-anchor">#</a> 数组类型</h2> <h3 id="类型-方括号-表示法"><a href="#类型-方括号-表示法" class="header-anchor">#</a> 类型 + 方括号 表示法</h3> <div class="language- extra-class"><pre class="language-text"><code>let fibonacci: number[] = [1, 1, 2, 3, 5];
+</code></pre></div><h3 id="数组泛型"><a href="#数组泛型" class="header-anchor">#</a> 数组泛型</h3> <div class="language- extra-class"><pre class="language-text"><code>let fibonacci: Array&lt;number&gt; = [1, 1, 2, 3, 5];
+</code></pre></div><h3 id="用接口表示数组"><a href="#用接口表示数组" class="header-anchor">#</a> 用接口表示数组</h3> <div class="language- extra-class"><pre class="language-text"><code>interface NumberArray {
+    [index: number]: number;
+}
+
+let fibonacci: NumberArray = [1, 1, 2, 3, 5];
+</code></pre></div><h3 id="类数组"><a href="#类数组" class="header-anchor">#</a> 类数组</h3> <div class="language- extra-class"><pre class="language-text"><code>function sum() {
+    let args: {
+        [index: number]: number;
+        length: number;
+        callee: Function;
+    } = arguments;
+}
+</code></pre></div><p>常用的类数组在 TypeScript 中有内置的接口定义，如 <code>IArguments</code>, <code>NodeList</code>, <code>HTMLCollection</code> 等</p> <div class="language- extra-class"><pre class="language-text"><code>function sum() {
+    let args: IArguments = arguments;
+}
+</code></pre></div><p>其中 <code>IArguments</code></p> <div class="language- extra-class"><pre class="language-text"><code>interface IArguments {
+    [index: number]: any;
+    length: number;
+    callee: Function;
+}
+</code></pre></div><h3 id="数组中的-any"><a href="#数组中的-any" class="header-anchor">#</a> 数组中的 any</h3> <p>用 <code>any</code> 表示数组中可以出现任意类型</p> <div class="language- extra-class"><pre class="language-text"><code>let list: any[] = ['xcatliu', 25, { website: 'http://xcatliu.com' }];
+</code></pre></div><h2 id="函数类型"><a href="#函数类型" class="header-anchor">#</a> 函数类型</h2> <h3 id="函数声明"><a href="#函数声明" class="header-anchor">#</a> 函数声明</h3> <div class="language- extra-class"><pre class="language-text"><code>function sum(x: number, y: number): number {
+    return x + y;
+}
+</code></pre></div><p>此时，<strong>输入多余的（或者少于要求的）参数，是不被允许的，参数数量须一致</strong></p> <h3 id="函数表达式"><a href="#函数表达式" class="header-anchor">#</a> 函数表达式</h3> <div class="language- extra-class"><pre class="language-text"><code>let mySum: (x: number, y: number) =&gt; number = function (x: number, y: number): number {
+    return x + y;
+};
+</code></pre></div><h3 id="用接口定义函数的形状"><a href="#用接口定义函数的形状" class="header-anchor">#</a> 用接口定义函数的形状</h3> <div class="language- extra-class"><pre class="language-text"><code>interface SearchFunc {
+    (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+    return source.search(subString) !== -1;
+}
+</code></pre></div><h3 id="可选参数"><a href="#可选参数" class="header-anchor">#</a> 可选参数</h3> <div class="language- extra-class"><pre class="language-text"><code>function buildName(firstName: string, lastName?: string) {
+    if (lastName) {
+        return firstName + ' ' + lastName;
+    } else {
+        return firstName;
+    }
+}
+let tomcat = buildName('Tom', 'Cat');
+let tom = buildName('Tom');
+</code></pre></div><p>可选参数必须接在必需参数后面，<strong>可选参数后面不允许再出现必需参数</strong></p> <h3 id="参数默认值"><a href="#参数默认值" class="header-anchor">#</a> 参数默认值</h3> <p><strong>TypeScript 会将添加了默认值的参数识别为可选参数</strong></p> <div class="language- extra-class"><pre class="language-text"><code>function buildName(firstName: string, lastName: string = 'Cat') {
+    return firstName + ' ' + lastName;
+}
+let tomcat = buildName('Tom', 'Cat');
+let tom = buildName('Tom');
+</code></pre></div><h3 id="剩余参数"><a href="#剩余参数" class="header-anchor">#</a> 剩余参数</h3> <div class="language- extra-class"><pre class="language-text"><code>function push(array: any[], ...items: any[]) {
+    items.forEach(function(item) {
+        array.push(item);
+    });
+}
+
+let a = [];
+push(a, 1, 2, 3);
+</code></pre></div><h3 id="重载"><a href="#重载" class="header-anchor">#</a> 重载</h3> <div class="language- extra-class"><pre class="language-text"><code>function reverse(x: number): number;
+function reverse(x: string): string;
+function reverse(x: number | string): number | string {
+    if (typeof x === 'number') {
+        return Number(x.toString().split('').reverse().join(''));
+    } else if (typeof x === 'string') {
+        return x.split('').reverse().join('');
+    }
+}
+</code></pre></div><h2 id="类型断言"><a href="#类型断言" class="header-anchor">#</a> 类型断言</h2> <h3 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h3> <div class="language- extra-class"><pre class="language-text"><code>值 as 类型
+</code></pre></div><h3 id="将一个联合类型断言为其中一个类型"><a href="#将一个联合类型断言为其中一个类型" class="header-anchor">#</a> 将一个联合类型断言为其中一个类型</h3> <div class="language- extra-class"><pre class="language-text"><code>interface Cat {
+    name: string;
+    run(): void;
+}
+interface Fish {
+    name: string;
+    swim(): void;
+}
+
+function isFish(animal: Cat | Fish) {
+    if (typeof (animal as Fish).swim === 'function') {
+        return true;
+    }
+    return false;
+}
+</code></pre></div><h3 id="将一个父类断言为更加具体的子类"><a href="#将一个父类断言为更加具体的子类" class="header-anchor">#</a> 将一个父类断言为更加具体的子类</h3> <div class="language- extra-class"><pre class="language-text"><code>interface ApiError extends Error {
+    code: number;
+}
+interface HttpError extends Error {
+    statusCode: number;
+}
+
+function isApiError(error: Error) {
+    if (typeof (error as ApiError).code === 'number') {
+        return true;
+    }
+    return false;
+}
+</code></pre></div><h3 id="将任何一个类型断言为-any"><a href="#将任何一个类型断言为-any" class="header-anchor">#</a> 将任何一个类型断言为 <code>any</code></h3> <div class="language- extra-class"><pre class="language-text"><code>window.foo = 1;
+
+// index.ts:1:8 - error TS2339: Property 'foo' does not exist on type 'Window &amp; typeof globalThis'.
+</code></pre></div><p>上面的例子中，我们需要将 <code>window</code> 上添加一个属性 <code>foo</code>，但 TypeScript 编译时会报错，提示我们 <code>window</code> 上不存在 <code>foo</code> 属性</p> <div class="language- extra-class"><pre class="language-text"><code>(window as any).foo = 1;
+</code></pre></div><h3 id="将-any-断言为一个具体的类型"><a href="#将-any-断言为一个具体的类型" class="header-anchor">#</a> 将 <code>any</code> 断言为一个具体的类型</h3> <div class="language- extra-class"><pre class="language-text"><code>function getCacheData(key: string): any {
+    return (window as any).cache[key];
+}
+
+interface Cat {
+    name: string;
+    run(): void;
+}
+
+const tom = getCacheData('tom') as Cat;
+tom.run();
+</code></pre></div><h2 id="内置对象"><a href="#内置对象" class="header-anchor">#</a> 内置对象</h2> <p>JavaScript 中有很多内置对象，它们可以直接在 TypeScript 中当作定义好的类型</p> <h3 id="ecmascript-的内置对象"><a href="#ecmascript-的内置对象" class="header-anchor">#</a> ECMAScript 的内置对象</h3> <p><code>Boolean</code>, <code>Error</code>, <code>Date</code>, <code>RegExp</code> 等</p> <div class="language- extra-class"><pre class="language-text"><code>let b: Boolean = new Boolean(1);
+let e: Error = new Error('Error occurred');
+let d: Date = new Date();
+let r: RegExp = /[a-z]/;
+</code></pre></div><h3 id="dom-和-bom-的内置对象"><a href="#dom-和-bom-的内置对象" class="header-anchor">#</a> DOM 和 BOM 的内置对象</h3> <p><code>Document</code>, <code>HTMLElement</code>, <code>Event</code>, <code>NodeList</code> 等</p> <div class="language- extra-class"><pre class="language-text"><code>let body: HTMLElement = document.body;
+let allDiv: NodeList = document.querySelectorAll('div');
+document.addEventListener('click', function(e: MouseEvent) {
+  // Do something
+});
+</code></pre></div><h3 id="用-typescript-写-node-js"><a href="#用-typescript-写-node-js" class="header-anchor">#</a> 用 TypeScript 写 Node.js</h3> <p>Node.js 不是内置对象的一部分，如果想用 TypeScript 写 Node.js，则需要引入第三方声明文件</p> <div class="language- extra-class"><pre class="language-text"><code>npm install @types/node --save-dev
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">10/13/2022, 6:28:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/daydayup/redux/" class="prev">
+        Redux
+      </a></span> <span class="next"><a href="/daydayup/css/">
+        CSS
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/daydayup/assets/js/app.56a8c8b9.js" defer></script><script src="/daydayup/assets/js/2.597ae21a.js" defer></script><script src="/daydayup/assets/js/14.dffa566a.js" defer></script>
+  </body>
+</html>
